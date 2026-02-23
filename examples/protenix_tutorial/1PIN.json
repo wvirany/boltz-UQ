@@ -1,0 +1,11 @@
+[{
+    "name": "test_tiny",
+    "sequences": [
+        {
+            "proteinChain": {
+                "sequence": "MADEEKLPPGWEKRMSRSSGRVYYFNHITNASQWERPSGNSSSGGKNGQGEPARVRCSHLLVKHSQSRRPSSWRQEKITRTKEEALELINGYIQKIKSGEEDFESLASQFSDCSSAKARGDLGAFSRGQMQKPFEDASFALRTGEMSGPVFTDSGIHIILRTE",
+                "count": 1
+            }
+        }
+    ]
+}]
