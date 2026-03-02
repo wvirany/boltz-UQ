@@ -60,7 +60,7 @@ MADEEKLPPGWEKRMSRSSGRVYYFNHITNASQWERPSGNSSSGGKNGQGEPARVRCSHLLVKHSQSRRPSSWRQEKITR
 ```
 
 2. **Specify the input JSON:**
-```json
+```
 [{
     "name": "test_tiny",
     "sequences": [
@@ -96,7 +96,7 @@ Note I used very conservative parameters here for a quick run.
 ```
 
 The confidence prediction JSON file looks like
-```json
+```
 {
     "plddt": 37.274845123291016,
     "gpde": 4.546759605407715,
