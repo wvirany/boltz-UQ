@@ -108,10 +108,13 @@ The confidence prediction JSON file looks like
 
 # Data processing
 
+## Evaluation set
+
+We are using the Runs-N-Poses benchmark to evaluate Protenix. This contains > 2800 systems deposited in the PDB after 2021-09-30. Metadata for the dataset can be found in `data/metadata.csv` - this contains PDB codes, ligand SMILES, and training set similarity metrics, as well as several other useful metrics describing each system.
+
 ## Protein structure validation set
 
 The validation set consists of 100 single-chain protein structures deposited in the PDB after Protenix's training cutoff (2021-09-30), ensuring an unseen validation set.
-
 
 Candidate structures were retrieved programmatically via the RCSB PDB search API with the following filters:
 - Deposition date after `2021-09-30`
@@ -126,3 +129,11 @@ Candidate structures were retrieved programmatically via the RCSB PDB search API
  
  **Files:**
  - `data/protein_validation_set.fasta`: sequences for all 100 proteins
+
+
+## Inputs
+
+All inference jobs are formatted as `json` files. We have three inference jobs:
+* `protein_validation_set.json`: 100 jobs corresponding to the protein structure validation set described above
+* `rnp_tiny.json`: A tiny subset of the Runs-N-Poses benchmark containing 5 protein-ligand systems for testing
+* `rnp_full.json`: The full Runs-N-Poses evaluation set
