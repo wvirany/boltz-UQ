@@ -1,0 +1,21 @@
+[
+    {
+        "name": "5sau__1__1.A__1.B",
+        "sequences": [
+            {
+                "proteinChain": {
+                    "sequence": "PGAVGDGPPRVDFPRSRLRFKEKLGEGQFGEVHLCEVDSPQDLVSLDFPLNVRKGHPLLVAVKILRPDATKNARNDFLKEVKIMSRLKDPNIIRLLGVCVQDDPLCMITDYMENGDLNQFLSAHQLEDKAAEGAPGDPTISYPMLLHVAAQIASGMRYLATLNFVHRDLATRNCLVGENFTIKIADFGMSRNLYAGDYYRVQGRAVLPIRWMAWECILMGKFTTASDVWAFGVTLWEVLMLCRAQPFGQLTDEQVIENAGEFFRDQGRQVYLSRPPACPQGLYELMLRCWSRESEQRPPFSQLHRFLAEDALNTVHHHHHH",
+                    "count": 1,
+                    "pairedMsaPath": "/scratch/wvirany/msa_files/5sau__1__1.a__1.b/A/pairing.a3m",
+                    "unpairedMsaPath": "/scratch/wvirany/msa_files/5sau__1__1.a__1.b/A/non_pairing.a3m"
+                }
+            },
+            {
+                "ligand": {
+                    "ligand": "Nc1ccc(C#Cc2cccc(C(=O)Nc3cccc(C(F)(F)F)c3)c2)cn1",
+                    "count": 1
+                }
+            }
+        ]
+    }
+]
