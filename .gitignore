@@ -1,6 +1,7 @@
 # Large directories for Protenix inference
 ground_truth/
 inputs/rnp_full/
+output/rnp_full/
 
 # Dev notebooks
 *-dev.ipynb
