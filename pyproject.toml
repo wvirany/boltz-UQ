@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "boltz-UQ"
 version = "0.1.0"
-description = "Multi-fidelity active learning"
+description = ""
 requires-python = ">=3.8"
 dependencies = [
     "numpy",
