@@ -49,6 +49,16 @@ protenix predict --input {input.json} --out_dir ./output
 - `--sample`: Number of structure samples to generate per input
 - `--trimul_kernel` / `--triatt_kernel`: Kernel implementations for triangular multiplicative and attention modules. Use `torch` for compatibility (e.g. on MIG slices), `cuequivariance` for speed on full H100 nodes. See `kernels.md` in main docs for more info.
 
+Test Protenix inference on pilot set (5 complexes):
+```bash
+protenix pred --input /scratch/wvirany/boltz-UQ/inputs/rnp_pilot --out_dir /scratch/wvirany/boltz-UQ/output/rnp_pilot --use_default_params true --use_msa true --sample 5 --trimul_kernel cuequivariance --triatt_kernel cuequivariance
+```
+
+Full Protenix inference on Runs-N-Poses:
+```bash
+protenix pred --input /scratch/wvirany/boltz-UQ/inputs/rnp_full --out_dir /scratch/wvirany/boltz-UQ/output/rnp_full --use_default_params true --use_msa true --sample 5 --trimul_kernel cuequivariance --triatt_kernel cuequivariance
+```
+
 ## Inference example
 
 An example of predicting the structure of [1PIN](https://www.rcsb.org/structure/1PIN):
