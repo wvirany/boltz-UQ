@@ -57,6 +57,9 @@ def compute_lddt(pred_cif_path, gt_cif_path, system_id):
         all_lddt.append(lddt_scores)
         all_chains.append(np.array([pred_chain] * len(common)))
 
+    if not all_res_ids:
+        raise ValueError(f"No common residues found between pred and GT for any chain")
+
     return (
         np.concatenate(all_res_ids),
         np.concatenate(all_plddt),
