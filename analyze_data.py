@@ -10,7 +10,7 @@ OUT_DIR = Path("/scratch/wvirany/boltz-UQ/output/rnp_full")
 GT_DIR  = Path("/scratch/wvirany/ground_truth")
 RESULTS = Path("/scratch/wvirany/boltz-UQ/data/results_per_residue.csv")
 
-FIELDNAMES = ["system_id", "chain_type", "res_id", "plddt", "lddt"]
+FIELDNAMES = ["system_id", "chain_id", "res_id", "plddt", "lddt"]
 
 
 def compute_lddt(pred_cif_path, gt_cif_path, system_id):
